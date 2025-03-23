@@ -1,0 +1,12 @@
+specVersion: "v1beta"
+serviceId: "ai-wallet"
+location: "us-central1"
+schema:
+  source: "./schema"
+  datasource:
+    postgresql:
+      database: "fdcdb"
+      cloudSql:
+        instanceId: "ai-wallet-fdc"
+      # schemaValidation: "COMPATIBLE"
+connectorDirs: ["./connector"]
